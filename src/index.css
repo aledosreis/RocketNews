@@ -15,6 +15,7 @@ html {
   padding: 0;
   color: var(--color-white);
   overflow: hidden;
+  font-size: 10px;
 }
 
 * {

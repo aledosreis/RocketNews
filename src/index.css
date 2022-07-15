@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+:root {
+  --color-green: #08c05e;
+  --color-purple: #8257e5;
+  --color-black: #121214;
+  --color-white: #ffffff;
+  --color-gray: #a8a8a8;
+  --color-gray-light: ##6a6a6a;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

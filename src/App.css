@@ -79,7 +79,7 @@
 .form .input input#email {
   border: none;
   width: 750px;
-  color: var(--color-gray-light);
+  color: var(--color-gray);
   padding: 17px 10px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;

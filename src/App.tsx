@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import rocketNewsLogo from './assets/rocketnews-logo.svg'
 import sendIcon from './assets/send-icon.svg'
 import arrowRight from './assets/arrow-right.svg'
@@ -5,6 +6,13 @@ import readNews from './assets/image.png'
 import './App.css'
 
 function App() {
+  const [email, setEmail] = useState('')
+
+  function handleSubmit() {
+    // eslint-disable-next-line no-alert
+    alert(`Hello ${email}`)
+  }
+
   return (
     <div className="App">
       <div className="form-panel">
@@ -23,8 +31,13 @@ function App() {
           <p>Insira seu e-mail:</p>
           <div className="input">
             <div id="input-start" />
-            <input type="email" id="email" placeholder="email@dominio.com" />
-            <button type="submit">
+            <input
+              type="email"
+              id="email"
+              placeholder="email@dominio.com"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button type="submit" onClick={handleSubmit}>
               <img src={sendIcon} alt="Enviar" />
             </button>
           </div>
